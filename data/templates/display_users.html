@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+User Management
+{% endblock title %}
+
+{% block body %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Age</th>
+                <th scope="col">Date of Birth</th>
+                <th scope="col">Actions</th> <!-- Added Actions column header -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.age }}</td>
+                <td>{{ user.date_of_birth }}</td>
+                <td>
+                    <a href="{% url 'update' user.id %}" class="btn btn-sm btn-primary"><i class="bi bi-pencil-fill"></i></a>
+                    <a href="{% url 'delete' user.id %}" class="btn btn-sm btn-danger"><i class="bi bi-trash3-fill"></i></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock body %}
