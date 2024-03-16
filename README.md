@@ -22,9 +22,9 @@ Create the project in a virtual environment. Make requirements.txt file with all
 - user data update form
 
 # Required urls add user data and retrieve user data
-- user input data form url endpoint: http://127.0.0.1:8000/
+- user input data form url endpoint: http://127.0.0.1:8000/add_user/
 - user data display url end point: http://127.0.0.1:8000/display-users/
-- user data update url end point: http://127.0.0.1:8000/update/2/
+- user data update url end point: http://127.0.0.1:8000/update/
 
 # A few Steps for run the project:
 - clone repo from given GitHub url: https://github.com/akhilkoregithub/user-data-management.git
