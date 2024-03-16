@@ -27,7 +27,7 @@ Create the project in a virtual environment. Make requirements.txt file with all
 - user data update url end point: http://127.0.0.1:8000/update/2/
 
 # A few Steps for run the project:
-- clone repo from given GitHub url: 
+- clone repo from given GitHub url: https://github.com/akhilkoregithub/user-data-management.git
 - create virtual environment and activate it
 - install dependencies from "requirements.txt" using pip install - r requirements.txt command
 - run command "python manage.py migrate"
